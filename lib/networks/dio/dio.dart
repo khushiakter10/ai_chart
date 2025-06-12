@@ -19,8 +19,8 @@ final class DioSingleton {
   void create() {
     BaseOptions options = BaseOptions(
         baseUrl: url,
-        connectTimeout: const Duration(milliseconds: 100000),
-        receiveTimeout: const Duration(milliseconds: 100000),
+        connectTimeout:  Duration(milliseconds: 100000),
+        receiveTimeout:  Duration(milliseconds: 100000),
         headers: {
           NetworkConstants.ACCEPT: NetworkConstants.ACCEPT_TYPE,
           NetworkConstants.ACCEPT_LANGUAGE: appData.read(kKeyCountryCode) ?? "pt",
